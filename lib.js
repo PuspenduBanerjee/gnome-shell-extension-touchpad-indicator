@@ -46,7 +46,7 @@ var DEBUG_LOG_FILE = GLib.build_filenamev([StoragePath,
    'touchpad-indicator.log']);
 if (GLib.file_test(DEBUG_LOG_FILE, GLib.FileTest.EXISTS) === false)
     GLib.file_set_contents(DEBUG_LOG_FILE, "");
-    
+
 
 let LOGS = "";
 
@@ -57,7 +57,7 @@ var ALL_TOUCHPADS = TOUCHPADS.slice();
 const TRACKPOINTS = new Array('trackpoint','accu point','trackstick',
                               'touchstyk','pointing stick','dualpoint stick');
 const FINGER_TOUCHES = Array('finger touch');
-const TOUCHSCREENS = Array('touchscreen', 'maxtouch');
+const TOUCHSCREENS = Array('touchscreen', 'maxtouch', 'hid touch controller');
 const PENS = Array('pen stylus', 'pen eraser');
 const OTHERS = new Array();
 var ALL_OTHERS = OTHERS.slice();
